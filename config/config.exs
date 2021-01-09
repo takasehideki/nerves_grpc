@@ -31,3 +31,6 @@ if Mix.target() == :host or Mix.target() == :"" do
 else
   import_config "target.exs"
 end
+
+# Start gRPC server in OTP
+config :grpc, start_server: true

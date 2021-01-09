@@ -22,8 +22,9 @@ defmodule NervesGrpc.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {NervesGrpc.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      #mod: {NervesGrpc.Application, []},
+      mod: {SampleServerApp, []},
+      extra_applications: [:logger, :runtime_tools, :grpc]
     ]
   end
 
