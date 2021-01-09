@@ -1,6 +1,23 @@
 # NervesGrpc
 
-**TODO: Add description**
+## Usage
+
+### Build gRPC server on Nerves
+
+```shell
+export MIX_TARGET=rpi4  # I'm using rpi4 as target
+mix deps.get
+mix firmware
+mix burn
+```
+
+gRPC server on is automatically started on Nerves.
+
+### Send to proto message to server
+
+```shell
+MIX_TARGET=host mix run priv/sample_client.ex
+```
 
 ## Targets
 
